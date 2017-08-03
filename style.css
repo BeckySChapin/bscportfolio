@@ -1,0 +1,83 @@
+html {
+  font-size: 62.5%;
+  color: white;
+  margin: 8% 12%;
+  background: linear-gradient(0deg, #740023, #5d0072, #1e007d, #005c7f, #005c7f, #1e007d, #5d0072, #740023);
+background-size: 1600% 1600%;
+
+-webkit-animation: gradient 53s ease infinite;
+-moz-animation: gradient 53s ease infinite;
+animation: gradient 53s ease infinite;
+
+@-webkit-keyframes gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+}
+
+pre {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
+
+a {
+  /*text-decoration: none;*/
+  color: lightgrey;
+
+}
+
+a:hover {
+  color: white;
+}
+
+.right {
+  text-align: right;
+}
+
+.dragonkin {
+  text-align: center;
+  height: 100px;
+
+}
+
+.email {
+  font-style: italic;
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes gradient {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
+
+
+@media (max-width: 900px) {
+  pre {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+}
