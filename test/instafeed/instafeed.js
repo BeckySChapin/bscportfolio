@@ -37,13 +37,13 @@
 
     Instafeed.prototype.run = function(url) {
       var header, instanceName, script;
-      if (typeof this.options.clientId !== 'cde6b432bddb4a84a3ed05d613ca92db') {
-        if (typeof this.options.accessToken !== '5a1afa9337914b14870a3bba739b2b18') {
+      if (typeof this.options.clientId !== 'string') {
+        if (typeof this.options.accessToken !== 'string') {
           throw new Error("Missing clientId or accessToken.");
         }
       }
-      if (typeof this.options.accessToken !== '5a1afa9337914b14870a3bba739b2b18') {
-        if (typeof this.options.clientId !== 'cde6b432bddb4a84a3ed05d613ca92db') {
+      if (typeof this.options.accessToken !== 'string') {
+        if (typeof this.options.clientId !== 'string') {
           throw new Error("Missing clientId or accessToken.");
         }
       }
