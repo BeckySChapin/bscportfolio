@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel='shortcut icon' href='images/dragonkinicon.png' type='image/x-icon' />
 		</head>
 	<body>
 
@@ -97,7 +98,9 @@
 				        get: 'user',
 				        userId: '1173638732',
 								accessToken: '1173638732.cde6b43.5a1afa9337914b14870a3bba739b2b18',
-								limit:'10',
+								filter: function(image) {
+            			return image.tags.indexOf('portfolio') >= 0;
+        				}
 							});
 				feed.run();
 			</script>

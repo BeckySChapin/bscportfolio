@@ -7,12 +7,13 @@
       var option, value;
       this.options = {
         target: 'instafeed',
-        get: 'popular',
-        resolution: 'thumbnail',
+        get: 'tagged',
+        tagName: 'painting',
+        resolution: 'low_resolution',
         sortBy: 'none',
-        links: true,
+        links: false,
         mock: false,
-        useHttp: false
+        useHttp: true,
       };
       if (typeof params === 'object') {
         for (option in params) {
